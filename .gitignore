@@ -1,12 +1,52 @@
 # Prerequisites
 *.d
-
+stm32f10x*
 # Object files
 *.o
 *.ko
 *.obj
 *.elf
+# --- Keil MDK / ARMCC 特定文件 ---
+# 工程文件
+*.uvguix.*
+*.uvoptx
+*.uvprojx
+*.uvmpw
+DebugConfig/
+lib/
+Listings/
+start/
+Project*
+EventRecorderStub.scvd
+Objects/
+# 编译输出和调试信息
+*.axf
+*.crf
+*.d
+*.dep
+*.elf
+*.lnp
+*.lst
+*.map
 
+# 目标文件和库
+*.o
+*.obj
+*.a
+*.lib
+
+# --- 构建输出目录 ---
+DebugConfig/
+Listings/
+Objects/
+build/
+Debug/
+Release/
+
+# --- 生成的用户特定文件 ---
+# 注意：这些文件包含个人设置，不应共享
+*.uvguix.*
+.jlink
 # Linker output
 *.ilk
 *.map
